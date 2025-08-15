@@ -1,0 +1,35 @@
+.highlight-date {
+  background-color: #facc15;
+  border-radius: 50%;
+  color: #fff ;
+}
+
+.highlight-date-uk {
+   background: #38dee0;
+background: linear-gradient(178deg,rgba(56, 222, 224, 1) 0%, rgba(245, 245, 44, 1) 100%);
+}
+.highlight-date-st {
+	    background-color: #c06906;
+}
+
+.highlight-date--ste {
+  background-color: #15aafa;
+}
+
+.react-calendar {
+  max-width: 550px;
+  margin: auto;
+  border: none;
+  font-family: sans-serif;
+}
+
+.react-calendar__tile--active {
+  background: #2563eb ;
+  color: white ;
+}
+.event{
+	border-radius:50%;
+	display: block;
+	width:20px;
+	height: 20px;
+}

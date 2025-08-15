@@ -1,0 +1,130 @@
+.mySwiper__teachers.swiper {
+  width: 100%;
+	height: 500px;
+	padding-bottom: 10px;
+}
+
+.mySwiper__teachers .swiper-slide {
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+
+.mySwiper__teachers.swiper {
+	/* height: 550px; */
+}
+
+.mySwiper__teachers .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/* .teachers-slide {
+  padding-bottom: 40px;
+} */
+
+.teachers-slide__title {
+  padding-top: 80px;
+}
+
+.teachers__img img {
+  width: 100%;
+  object-fit: contain;
+}
+.teachers__info {
+  padding: 8px 15px;
+  color: black;
+  background-color: rgb(250, 235, 215, 70%);
+  text-align: center;
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.teachers__name {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  letter-spacing: 0.8px;
+}
+.mySwiper__teachers .swiper-pagination-bullet {
+  background-color: #bd786f;
+  width: 80px;
+  height: 18px;
+  border-radius:5px;
+}
+
+.swiper-pagination{
+/* position: relative; */
+}
+.mySwiper__teachers.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 5px !important;
+
+}
+.teachers-slide__container{
+	padding-bottom: 20px;
+}
+.teachers-slide__title{
+	margin-bottom: 50px;
+	letter-spacing: 0.3px;
+}
+@media(max-width:991.98px){
+	.mySwiper__teachers.swiper {
+  width: 100%;
+	height: 400px;
+	padding-bottom: 10px;
+}
+	.mySwiper__teachers .swiper-slide {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+}
+@media(max-width:767.98px){
+	.mySwiper__teachers .swiper-pagination-bullet {
+  width: 50px;
+  height: 14px;
+  border-radius:5px;
+}
+	.teachers__name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 0.6px;
+}
+.teachers__position{
+	font-size: 16px;
+}
+	.mySwiper__teachers.swiper {
+  width: 100%;
+	height: 380px;
+	padding-bottom: 10px;
+}
+	.mySwiper__teachers .swiper-slide {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+}
+@media(max-width:500px){
+	.mySwiper__teachers.swiper {
+  width: 100%;
+	height: 300px;
+	padding-bottom: 10px;
+}
+	.mySwiper__teachers .swiper-slide {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+.mySwiper__teachers .swiper-pagination-bullet {
+  width: 35px;
+  height: 12px;
+  border-radius:5px;
+}
+
+}

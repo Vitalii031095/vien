@@ -1,8 +1,42 @@
+
 @import "tailwindcss";
+@import "../components/Metasection/metasection.css";
+@import "./contacts/contact.css";
+@import "../components/Calendar/calendar.css";
+
+/* @import "lightgallery/css/lightgallery.css";
+@import "lightgallery/css/lg-thumbnail.css";
+@import "lightgallery/css/lg-zoom.css"; */
+
+
+@font-face{
+	font-family: Source Sans Pro;
+	src: url('/fonts/SourceSansPro-Semibold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('/fonts/SourceSansPro-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: Bodoni 72;
+	src: url('/fonts/bodoni-72-book.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f9f7f1;
+  --foreground: #2c2c2c;
+  --spacing: 4px;
 }
 
 @theme inline {
@@ -10,6 +44,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --font-source :  "Source Sans Pro, sans-seri";
+  --font-bodoni :  "Bodoni 72, sans-seri";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +59,40 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
+  min-height: 100vh;
+}
+
+[class*="__container"] {
+  max-width: 1270px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+.sec-top{
+	padding-top: 95px;
+}
+.hero__img{
+	width:400px;
+	aspect-ratio: 1/1;
+}
+
+@media(max-width:991.98px){
+	.hero__img{
+	width:300px;
+}
+.img--subject{
+	width: 150px;
+	height: 150px;
+}
+}
+
+@media(max-width:768.98px){
+	.hero__img{
+	width:200px;
+}
+}
+@media(max-width:400px){
+	.hero__img{
+	width:150px;
+}
 }
