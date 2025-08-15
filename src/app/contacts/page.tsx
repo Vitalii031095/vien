@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="conatcts__container">
         <h2 className="meta__title contacts__title">Наші Контакти:</h2>
 
-        <div className="contacts__map">
+        <div className="contacts__map flex flex-col-reverse md:flex-row">
           <div className="contacts__iframe">
             <iframe
 				title="Мапа розташування школи"

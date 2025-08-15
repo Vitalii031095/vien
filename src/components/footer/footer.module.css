@@ -11,8 +11,21 @@
 	margin-bottom: 40px;
 }
 
+
 .footer__info{
 	text-align: center;
 	font-size: 16px;
 	text-align: center;
+}
+
+@media(max-width:610px){
+	.footer__menu{ 
+flex-direction: column;
+text-align: center;
+row-gap: 30px;
+margin-bottom: 20px;
+	}
+	.footer__info{
+	font-size: 12px;
+}
 }
