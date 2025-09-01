@@ -50,7 +50,7 @@ export default function Home() {
             <li className="features__item flex flex-col items-center gap-5">
               <Image
                 className="rounded-2xl"
-                src="/features/1.png"
+                src="/features/1.1.jpg"
                 alt="lastivka"
                 width={200}
                 height={200}
@@ -62,22 +62,22 @@ export default function Home() {
             <li className="features__item flex flex-col items-center gap-5">
               <Image
                 className="rounded-2xl"
-                src="/features/2.png"
+                src="/features/2.1.png"
                 alt="lastivka"
                 width={200}
                 height={200}
               />
               <p className="md:text-xl m-w-[220px] text-center">
-                Навчання за українською програмою
+                Навчання з українським культурним і мовним акцентом
               </p>{" "}
             </li>
             <li className="features__item flex flex-col items-center gap-5">
               <Image
-                className="rounded-2xl"
-                src="/features/3.png"
+                className="rounded-2xl "
+                src="/features/3.jpg"
                 alt="lastivka"
                 width={200}
-                height={200}
+                height={800}
               />
               <p className="md:text-xl m-w-[220px] text-center">
                 Свята, пісні, творчість і традиції
@@ -111,10 +111,12 @@ export default function Home() {
             <div className="age__info">
 					 <h2 className="meta__title meta__title--bot  ">Вікові категорії:</h2>
               <ul className="flex flex-col space-y-2.5">
-                <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md">4 роки</li>
-                <li className="text-xl md:text-2xl p-2 bg-white rounded-lg shadow-md">5-6 років</li>
-                <li className="text-xl md:text-2xl p-2 bg-white rounded-lg shadow-md">7+ років</li>
-                <li className="text-xl md:text-2xl p-2 bg-white rounded-lg shadow-md">8+ років</li>
+                <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md"> 7-8 років</li>
+                <li className="text-xl md:text-2xl p-2 bg-white rounded-lg shadow-md">9-10 років</li>
+                <li className="text-xl md:text-2xl p-2 bg-white rounded-lg shadow-md">10+ років</li>
+					
+
+
               </ul>
             </div>
           </div>

@@ -26,12 +26,11 @@ const Header = () => {
   return (
     <div className="header ">
       <div className="header__container">
-        <Link href="." className="header__logo logo">
+        <Link href="." className="relative block header__logo logo">
           <Image
-			 className="logo--sm"
+			 className=""
             src="/logo.png"
-            width={100}
-            height={100}
+           fill
             alt="Picture of the author"
           />
         </Link>

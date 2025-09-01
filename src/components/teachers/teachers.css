@@ -73,6 +73,14 @@
 	letter-spacing: 0.3px;
 }
 @media(max-width:991.98px){
+	.teachers__info {
+  padding: 4px 10px;
+}
+.teachers__name {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: -5px;
+}
 	.mySwiper__teachers.swiper {
   width: 100%;
 	height: 400px;
@@ -85,19 +93,20 @@
 }
 }
 @media(max-width:767.98px){
+
 	.mySwiper__teachers .swiper-pagination-bullet {
   width: 50px;
   height: 14px;
   border-radius:5px;
 }
 	.teachers__name {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: -7px;
   letter-spacing: 0.6px;
 }
 .teachers__position{
-	font-size: 16px;
+	font-size: 18px;
 }
 	.mySwiper__teachers.swiper {
   width: 100%;

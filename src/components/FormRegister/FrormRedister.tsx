@@ -9,18 +9,31 @@ export default function FrormRedister() {
 
   const onFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
     const form = e.target as HTMLFormElement // ✅ currentTarget завжди вказує на форму
     const formData = new FormData(form)
-    const data = Object.fromEntries(formData.entries())
-    console.log(data)
+	
+	const today = new Date();
+	const month =today.getMonth()
+	 if(month === 7 || 6||11||0){
+		const dayNumber = today.getDate()
+		const conditionsJuly = (month=== 6 && dayNumber >=15);
+		const conditionsAugust = (month=== 7 && dayNumber <=15);
+		const conditionsDecember = (month=== 11 && dayNumber >=5);
+		const conditionsJanuar = (month=== 0 && dayNumber <=5);
+		 if (conditionsJanuar || conditionsJuly || conditionsAugust ||  conditionsDecember){
+console.log( month,dayNumber, "тобі доступна форма")
+const data = Object.fromEntries(formData.entries())
 
 	 //для перевірки чи дитина старша хотяби трьох років
 	 const dateString = formData.get("data") as string;
 const birthday = new Date(dateString);
-const today = new Date();
+
+
+
 const age = today.getFullYear() - birthday.getFullYear();
 
-if (age < 3) {
+if (age < 3 && age >8) {
   alert("Дитина має бути старше 3 років");
   return;
 }
@@ -38,6 +51,12 @@ if (age < 3) {
     } else {
       alert("Помилка при відправленні")
     }
+		 }
+		 else{alert("Прийняття форми та відправка ще не доступні")}
+		
+		}
+		
+    
   }
   return (
     <form

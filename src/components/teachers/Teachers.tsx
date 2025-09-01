@@ -1,5 +1,5 @@
-'use client'
-import {teachers } from "./teachersAr"
+"use client"
+import { teachers } from "./teachersAr"
 
 // ___________слайд____________________
 import React from "react"
@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
-import { EffectCoverflow, Pagination} from "swiper/modules"
+import { EffectCoverflow, Pagination } from "swiper/modules"
 
 import "./teachers.css"
 import Image from "next/image.js"
@@ -22,13 +22,13 @@ const Teachers = () => {
       <SwiperSlide key={teach.id}>
         <div className="teachers__wrapper">
           <div className="teachers__img">
-				<Image src={teach.img} alt={teach.name} width='400' height='400'/>
+            <Image src={teach.img} alt={teach.name} width="400" height="400" />
             {/* <img src={teach.img} alt={teach.name} /> */}
           </div>
-			 <div className="teachers__info">
-				<p className="teachers__name">{teach.name}</p>
-				<p className="teachers__position">{teach.position}</p>
-			 </div>
+          <div className="teachers__info">
+            <p className="teachers__name">{teach.name}</p>
+            <p className="teachers__position">{teach.position}</p>
+          </div>
         </div>
       </SwiperSlide>
     )
@@ -39,11 +39,11 @@ const Teachers = () => {
         <div className="teachers-slide__container">
           <h2 className="meta__title teachers-slide__title">Наші вчителі:</h2>
           <Swiper
-			 spaceBetween={20}
-			  loop={true}
-			 pagination={{
-				clickable: true,
-			 }}
+            spaceBetween={20}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
@@ -55,28 +55,11 @@ const Teachers = () => {
               modifier: 1,
               slideShadows: true,
             }}
-		// 		   breakpoints={{
-      //     640: {
-      //       slidesPerView: 2,
-      //       spaceBetween: 20,
-      //     },
-      //     768: {
-      //       slidesPerView: 4,
-      //       spaceBetween: 40,
-      //     },
-      //     1024: {
-      //       slidesPerView: 5,
-      //       spaceBetween: 50,
-      //     },
-      //   }}
-				
-            modules={[EffectCoverflow,Pagination ]}
+
+            modules={[EffectCoverflow, Pagination]}
             className="mySwiper__teachers"
           >
-           
-      
-       
-          {teachersArray}
+            {teachersArray}
           </Swiper>
         </div>
       </section>

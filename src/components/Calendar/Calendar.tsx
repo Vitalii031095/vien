@@ -14,13 +14,24 @@ type Event = {
 type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 
+const formatDate = (date: Date) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
 const events: Event[] = [
   { date: '2025-08-24', title: 'День незалежності України 🎉', event: 'uk' },
-  { date: '2025-09-01', title: 'Перший дзвоник 🔔', event: 'ste' },
-  { date: '2025-12-25', title: 'Різдвяний концерт 🎄', event: 'ste' },
-  { date: '2025-09-06', title: 'Навчальний день 🎄' },
-  { date: '2025-09-20', title: 'Навчальний день 🎄' },
-  { date: '2025-10-04', title: 'Навчальний день 🎄' },
+  { date: '2025-09-07', title: 'Навчальний день 📘' },
+  { date: '2025-09-21', title: 'Навчальний день 📘' },
+  { date: '2025-10-05', title: 'Навчальний день 📘' },
+  { date: '2025-10-26', title: 'свято Осені 🍂, Навчальний день ', event: 'ste' },
+  { date: '2025-11-09', title: 'Навчальний день 📘' },
+  { date: '2025-11-23', title: 'Навчальний день 📘' },
+  { date: '2025-09-13', title: 'Ren Natur (Чисте довкілля) 🧹-🗑️', event: 'ste' },
+  { date: '2025-12-07', title: 'у Майстерні Святого Миколая (розпис різдвяного печива 🍪), навчальний день', event: 'ste' },
+  { date: '2025-12-13', title: 'Різдвяна казка 🎄', event: 'ste' },
 ];
 
 export default function CalendarEvent() {
@@ -43,13 +54,13 @@ export default function CalendarEvent() {
       return;
     }
 
-    const dateStr = date.toISOString().split('T')[0];
+    const dateStr = formatDate(date); // ✅ локальна дата без зсуву
     const event = events.find((e) => e.date === dateStr);
     setEventTitle(event ? event.title : null);
   };
 
   const tileClassName: CalendarProps['tileClassName'] = ({ date }) => {
-    const dateStr = date.toISOString().split('T')[0];
+    const dateStr = formatDate(date);
 
     if (events.some((e) => e.date === dateStr && e.event === 'ste')) {
       return 'highlight-date highlight-date--ste';
@@ -69,6 +80,10 @@ export default function CalendarEvent() {
         onChange={handleDateChange}
         value={selectedDate}
         tileClassName={tileClassName}
+		  prev2Label={null}   // прибирає кнопку "<<"
+  next2Label={null}   // прибирає кнопку ">>"
+//   minDate={new Date(2025, 0, 1)}   // січень 2025
+//   maxDate={new Date(2025, 11, 31)} // грудень 2025
       />
       {eventTitle && (
         <p style={{ marginTop: '10px', fontWeight: 'bold', color: '#d97706' }}>

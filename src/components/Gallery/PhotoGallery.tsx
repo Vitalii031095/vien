@@ -13,41 +13,36 @@ import Image from "next/image";
 
 const Gallery: React.FC = () => {
   const images = [
-    { src: "/images/fon1.jpg", thumb: "/images/fon1.jpg" },
-    { src: "/images/fon3.jpg", thumb: "/images/fon3.jpg" },
-    { src: "/images/school.jpg", thumb: "/images/school.jpg" },
-    { src: "/images/v1.jpg", thumb: "/images/v1.jpg" },
-    { src: "/images/v2.jpg", thumb: "/images/v2.jpg" },
-    { src: "/images/v3.jpg", thumb: "/images/v3.jpg" },
-    { src: "/images/v4.jpg", thumb: "/images/v4.jpg" },
-    { src: "/images/v5.jpg", thumb: "/images/v5.jpg" },
-    { src: "/images/v6.jpg", thumb: "/images/v6.jpg" },
-    { src: "/images/v7.jpg", thumb: "/images/v7.jpg" },
-    { src: "/images/v8.jpg", thumb: "/images/v8.jpg" },
-    { src: "/images/v9.jpg", thumb: "/images/v9.jpg" },
-    { src: "/images/v10.jpg", thumb: "/images/v10.jpg" },
-    { src: "/images/v11.jpg", thumb: "/images/v11.jpg" },
-    { src: "/images/v12.jpg", thumb: "/images/v13.jpg" },
-    { src: "/images/v13.jpg", thumb: "/images/v13.jpg" },
-    { src: "/images/v14.jpg", thumb: "/images/v14.jpg" },
-    { src: "/images/v15.jpg", thumb: "/images/v15.jpg" },
-    { src: "/images/v16.jpg", thumb: "/images/v16.jpg" },
-    { src: "/images/v17.jpg", thumb: "/images/v17.jpg" },
-    { src: "/images/v18.jpg", thumb: "/images/v18.jpg" },
-    { src: "/images/v19.jpg", thumb: "/images/v19.jpg" },
-    { src: "/images/v20.jpg", thumb: "/images/v20.jpg" },
+    { src: "/images/im1.jpg", thumb: "/images/im1.jpg" },
+    { src: "/images/im2.jpg", thumb: "/images/im2.jpg" },
+    { src: "/images/im3.jpg", thumb: "/images/im3.jpg" },
+    { src: "/images/im4.jpg", thumb: "/images/im4.jpg" },
+    { src: "/images/im5.jpg", thumb: "/images/im5.jpg" },
+    { src: "/images/im6.jpg", thumb: "/images/im6.jpg" },
+    { src: "/images/im7.jpg", thumb: "/images/im7.jpg" },
+    { src: "/images/im8.jpg", thumb: "/images/im8.jpg" },
+    { src: "/images/im9.jpg", thumb: "/images/im9.jpg" },
+    { src: "/images/im10.jpg", thumb: "/images/im10.jpg" },
+    { src: "/images/im11.jpg", thumb: "/images/im11.jpg" },
+    { src: "/images/im12.jpg", thumb: "/images/im12.jpg" },
+    { src: "/images/im14.jpg", thumb: "/images/im14.jpg" },
+    { src: "/images/im15.jpg", thumb: "/images/im15.jpg" },
+    { src: "/images/im16.jpg", thumb: "/images/im16.jpg" },
+    { src: "/images/im17.jpg", thumb: "/images/im17.jpg" }
   ];
 
   return (
     <section className="gallery mt-15">
 		<div className="gallery__container">
       <h2 className="text-center text-3xl mb-5 font-bold">Галерея нашої школи</h2>
-		<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+		<div className="grid grid-cols-1   min-[500px]:grid-cols-2 md:grid-cols-4 gap-4">
       <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}  elementClassNames="contents">
         {images.map((img, i) => (
-          <a href={img.src} key={i}  data-sub-html="<h4>Гори Карпати</h4><p>Світанок над полониною</p>">
-				<Image src={img.src} alt='' width='400' height='400'/>
-				<p>text</p>
+          <a href={img.src} key={i}  
+			//  data-sub-html="<h4>Гори Карпати</h4><p>Світанок над полониною</p>"
+			 >
+				<Image src={img.src} alt='' width='400' height='400' className="img--g"/>
+				{/* <p>text</p> */}
             {/* <img src={img.thumb} alt={`Фото ${i + 1}`} /> */}
           </a>
         ))}

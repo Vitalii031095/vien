@@ -18,9 +18,17 @@
 	z-index: 2;
 }
 .header__logo{
-	max-width: 140px;
+	 position: relative; /* обов’язково для fill */
+  width: 130px;       /* бажана ширина */
+  height: 70px;    
 }
-.header__logo image{
+@media(min-width:1024px){
+	.header__logo{
+		width: 160px;       /* бажана ширина */
+  height: 90px;  
+	}
+}
+.header__logo img{
 	width: 100%;
 }
 .menu__list{

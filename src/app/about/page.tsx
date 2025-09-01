@@ -33,7 +33,7 @@ export default function Aboutpage() {
       <section className="subjects mt-7 md:mt-15">
         <div className="subjects__container">
           <h2 className="mb-5 text-center text-4xl font-black">Предмети</h2>
-          <div className="subjects__wrapper flex max-w-[570px]: flex-col-reverse gap-10  max-w-[870px]:gap-24 md:items-center justify-center">
+          <div className="subjects__wrapper flex max-[570px]:flex-col-reverse gap-10  max-w-[870px]:gap-24 md:items-center justify-center">
             <div className="subjects__images grid grid-cols-2">
 					<Image className="img--subject" src="/subjects/1.png" alt="" width="200" height="200" />
 					<Image className="img--subject" src="/subjects/2.png" alt="" width="200" height="200" />
@@ -48,10 +48,10 @@ export default function Aboutpage() {
                 <li className=" subjects__item p-2 bg-white rounded-lg shadow-md">Українська мова</li>
                 <li className=" subjects__item p-2 bg-white rounded-lg shadow-md">Українська література</li>
                 <li className="subjects__item p-2 bg-white rounded-lg shadow-md">Розвиток мовлення</li>
-                <li className=" subjects__item p-2 bg-white rounded-lg shadow-md">«Я у світі»</li>
-                <li className=" subjects__item p-2 bg-white rounded-lg shadow-md">« Історія України»</li>
+                <li className=" subjects__item p-2 bg-white rounded-lg shadow-md">Я у світі</li>
+                <li className=" subjects__item p-2 bg-white rounded-lg shadow-md">Історія України</li>
                 <li className=" subjects__item p-2 bg-white rounded-lg shadow-md"> Креатив</li>
-                <li className=" subjects__item p-2 bg-white rounded-lg shadow-md">Українознавство.</li>
+                <li className=" subjects__item p-2 bg-white rounded-lg shadow-md">Українознавство</li>
                    
               </ul>
             </div>

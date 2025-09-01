@@ -1,5 +1,6 @@
 
 @import "tailwindcss";
+
 @import "../components/Metasection/metasection.css";
 @import "./contacts/contact.css";
 @import "../components/Calendar/calendar.css";
@@ -74,6 +75,12 @@ body {
 .hero__img{
 	width:400px;
 	aspect-ratio: 1/1;
+}
+.img--g{
+	width: 400px;
+	aspect-ratio:1;
+	object-fit: cover;
+	object-position: top;
 }
 
 @media(max-width:991.98px){
