@@ -10,14 +10,16 @@ export default function Home() {
           className="hero__container lg:min-h-[calc(100vh-95px)] flex flex-col
 		"
         >
-          <div className="hero__welcome welcome-hero flex items-center gap-15 justify-center max-[991px]:gap-5
-			  max-[610px]:gap-3 max-[450px]:gap-0  max-[510px]:-ml-[60px] max-[440px]:-ml-[100px]">
+          <div
+            className="hero__welcome welcome-hero flex items-center gap-15 justify-center max-[991px]:gap-5
+			  max-[610px]:gap-3 max-[450px]:gap-0  max-[510px]:-ml-[60px] max-[440px]:-ml-[100px]"
+          >
             <Image
               className="hero__img  "
               src="/lastivka12.png"
               alt="lastivka"
-              width={400}
-              height={400}
+              width={300}
+              height={300}
             />
 
             <div className="welcome-hero__info  ">
@@ -46,50 +48,50 @@ export default function Home() {
           <h2 className="features__title  text-xl md:text-3xl font-black text-center mb-10">
             Наша школа це:
           </h2>
-          <ul className="features__list grid grid-cols-2 md:grid-cols-3 gap-4 gap-y-6 lg:grid-cols-4">
-            <li className="features__item flex flex-col items-center gap-5">
+          <ul className="features__list grid grid-cols-2 md:grid-cols-3 gap-4 gap-y-8 lg:grid-cols-4">
+            <li className="features__item flex flex-col justify-between items-center gap-5">
               <Image
                 className="rounded-2xl"
                 src="/features/1.1.jpg"
                 alt="lastivka"
-                width={200}
+                width={300}
                 height={200}
               />
               <p className="md:text-xl m-w-[220px] text-center">
                 Живе спілкування українською мовою
               </p>
             </li>
-            <li className="features__item flex flex-col items-center gap-5">
+            <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
                 className="rounded-2xl"
                 src="/features/2.1.png"
                 alt="lastivka"
-                width={200}
+              width={300}
                 height={200}
               />
               <p className="md:text-xl m-w-[220px] text-center">
                 Навчання з українським культурним і мовним акцентом
               </p>{" "}
             </li>
-            <li className="features__item flex flex-col items-center gap-5">
+            <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
                 className="rounded-2xl "
                 src="/features/3.jpg"
                 alt="lastivka"
-                width={200}
-                height={800}
+                width={300}
+                height={200}
               />
               <p className="md:text-xl m-w-[220px] text-center">
                 Свята, пісні, творчість і традиції
               </p>
             </li>
-            <li className="features__item flex flex-col items-center gap-5">
+            <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
                 className="rounded-2xl"
-                src="/features/4.png"
+                src="/features/4.jpg"
                 alt="lastivka"
-                width={200}
-                height={200}
+                width={300}
+                height={300}
               />
               <p className="md:text-xl m-w-[220px] text-center">
                 {" "}
@@ -102,21 +104,34 @@ export default function Home() {
       <MetaSection />
       <section className="age pb-8 mt-10">
         <div className="age__container">
-         
-          <div className="age__wrapper flex flex-col-reverse items-center 
-			 md:flex-row justify-center gap-10  min-w[900px]:gap-25">
+          <div
+            className="age__wrapper flex flex-col-reverse items-center 
+			 md:flex-row justify-center gap-10  min-w[900px]:gap-25"
+          >
             <div className="age__img">
-              <Image className="rounded-xl" src="/fon3.jpg" alt="" width="450" height="450" />
+              <Image
+                className="rounded-xl"
+                src="/fon3.jpg"
+                alt=""
+                width="450"
+                height="450"
+              />
             </div>
             <div className="age__info">
-					 <h2 className="meta__title meta__title--bot  ">Вікові категорії:</h2>
+              <h2 className="meta__title meta__title--bot  ">
+                Вікові категорії:
+              </h2>
               <ul className="flex flex-col space-y-2.5">
-                <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md"> 7-8 років</li>
-                <li className="text-xl md:text-2xl p-2 bg-white rounded-lg shadow-md">9-10 років</li>
-                <li className="text-xl md:text-2xl p-2 bg-white rounded-lg shadow-md">10+ років</li>
-					
-
-
+                <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md">
+                  {" "}
+                  7-8 років
+                </li>
+                <li className="text-xl md:text-2xl p-2 bg-white rounded-lg shadow-md">
+                  9-10 років
+                </li>
+                <li className="text-xl md:text-2xl p-2 bg-white rounded-lg shadow-md">
+                  10+ років
+                </li>
               </ul>
             </div>
           </div>
