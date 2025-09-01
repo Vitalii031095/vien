@@ -90,8 +90,9 @@ export default function Home() {
                 className="rounded-2xl"
                 src="/features/4.jpg"
                 alt="lastivka"
-                width={300}
-                height={300}
+					 height={400}
+                width={350}
+                
               />
               <p className="md:text-xl m-w-[220px] text-center">
                 {" "}
