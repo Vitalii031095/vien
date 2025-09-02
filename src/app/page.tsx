@@ -5,9 +5,9 @@ import MetaSection from "../components/Metasection/MetaSection"
 export default function Home() {
   return (
     <>
-      <section className="hero sec-top lg:min-h-screen  ">
+      <section className="hero sec-top   ">
         <div
-          className="hero__container lg:min-h-[calc(100vh-95px)] flex flex-col
+          className="hero__container  flex flex-col
 		"
         >
           <div
@@ -27,7 +27,7 @@ export default function Home() {
                 Вітаємо в українській
               </p>
               <h1 className="text-3xl md:text-5xl font-bold text-amber-650">
-                Школі <q className="font-bodoni ml-3">Світанок</q>
+                школі <q className="font-bodoni ml-3">Світанок</q>
               </h1>
             </div>
           </div>
@@ -51,19 +51,20 @@ export default function Home() {
           <ul className="features__list grid grid-cols-2 md:grid-cols-3 gap-4 gap-y-8 lg:grid-cols-4">
             <li className="features__item flex flex-col justify-between items-center gap-5">
               <Image
-                className="rounded-2xl"
+                className="rounded-2xl w-full h-full object-cover"
                 src="/features/1.1.jpg"
                 alt="lastivka"
                 width={300}
                 height={200}
               />
+				 
               <p className="md:text-xl m-w-[220px] text-center">
                 Живе спілкування українською мовою
               </p>
             </li>
             <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
-                className="rounded-2xl"
+                className="rounded-2xl w-full h-full object-contain"
                 src="/features/2.1.png"
                 alt="lastivka"
               width={300}
@@ -75,7 +76,7 @@ export default function Home() {
             </li>
             <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
-                className="rounded-2xl "
+                className="rounded-2xl w-full h-full object-cover"
                 src="/features/3.jpg"
                 alt="lastivka"
                 width={300}
@@ -87,11 +88,11 @@ export default function Home() {
             </li>
             <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
-                className="rounded-2xl"
+                className="rounded-2xl w-full h-full object-cover"
                 src="/features/4.jpg"
                 alt="lastivka"
-					 height={400}
-                width={350}
+					 height={300}
+                width={200}
                 
               />
               <p className="md:text-xl m-w-[220px] text-center">
@@ -123,6 +124,10 @@ export default function Home() {
                 Вікові категорії:
               </h2>
               <ul className="flex flex-col space-y-2.5">
+                <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md">
+                  {" "}
+                 4 роки
+                </li>
                 <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md">
                   {" "}
                   7-8 років
