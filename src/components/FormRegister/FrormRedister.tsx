@@ -33,7 +33,7 @@ const birthday = new Date(dateString);
 
 const age = today.getFullYear() - birthday.getFullYear();
 
-if (age < 3 && age >8) {
+if (age < 4 && age >8) {
   alert("Дитина має бути старше 3 років");
   return;
 }

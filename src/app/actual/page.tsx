@@ -1,5 +1,6 @@
 import CalendarEvent from "@/components/Calendar/Calendar"
 import Gallery from "@/components/Gallery/PhotoGallery"
+import RegistrationSection from "@/components/RegistrationSection"
 
 export default function ActualPage() {
   return (
@@ -29,19 +30,20 @@ export default function ActualPage() {
       <div className="mt-10 text-left max-w-md mx-auto mb-8">
         <h3 className="text-2xl font-bold  mb-5 md:3xl">📋 Традиційні події школи</h3>
         <ul className="list-image-none pl-5 space-y-1 ">
-          <li>✔️ День Незалежності України</li>
-          <li>✔️ Чисте довкілля (Ren Natur)</li>
-          <li>✔️ Осіннє свято</li>
-          <li>✔️ Майстерня святого Миколая — розпис різдвяного печива</li>
-          <li>✔️ Різдвяне свято</li>
-          <li>✔️ Читання віршів до Дня народження Т. Г. Шевченка</li>
-          <li>✔️ Великодні забави</li>
-          <li>✔️ Святкування Дня Іменинника</li>
-          <li>✔️ Поїздка в зоопарк</li>
-          <li>✔️ Літній табір</li>
+          <li className=" md:text-2xl">✔️ День Незалежності України</li>
+          <li className=" md:text-2xl">✔️ Чисте довкілля (Ren Natur)</li>
+          <li className=" md:text-2xl">✔️ Осіннє свято</li>
+          <li className=" md:text-2xl">✔️ Майстерня святого Миколая — розпис різдвяного печива</li>
+          <li className=" md:text-2xl">✔️ Різдвяне свято</li>
+          <li className=" md:text-2xl">✔️ Читання віршів до Дня народження Т. Г. Шевченка</li>
+          <li className=" md:text-2xl">✔️ Великодні забави</li>
+          <li className=" md:text-2xl">✔️ Святкування Дня Іменинника</li>
+          <li className=" md:text-2xl">✔️ Поїздка в зоопарк</li>
+          <li className=" md:text-2xl">✔️ Літній табір</li>
         </ul>
       </div>
       <Gallery />
+		<RegistrationSection/>
     </div>
   )
 }

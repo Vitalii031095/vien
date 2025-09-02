@@ -5,7 +5,7 @@ function RegisterPage() {
   return (
 	 <div className='pt-40 form__container'>
 		<FrormRedister/>
-		page</div>
+		</div>
   )
 }
 
