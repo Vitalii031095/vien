@@ -1,5 +1,6 @@
 import React from 'react';
 import stl from './footer.module.css'
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -21,20 +22,27 @@ const Footer = () => {
 			<div>
 			  <h3 className="font-semibold mb-2">Ми в мережі</h3>
 			  <a
-				 href="https://t.me/ukrainian_school"
-				 className="underline hover:text-yellow-300 block"
+				 href="mailto:school@ukrainian.dk"
+				 className=" hover:text-yellow-300 block"
 				 target="_blank"
 				 rel="noopener noreferrer"
 			  >
-				 Telegram
+				<p className='flex items-center gap-4'>
+			<Image src="/email-icon.png" alt="email-icon" width={30} height={30}/>
+				 <span className='no-underline'> Електронна пошта</span>
+				 </p>
 			  </a>
 			  <a
-				 href="https://facebook.com/ukrainian.school"
-				 className="underline hover:text-yellow-300 block"
+				 href="https://www.facebook.com/share/1MkLC7RVFU/"
+				 className="mt-2 hover:text-yellow-300 block"
 				 target="_blank"
 				 rel="noopener noreferrer"
 			  >
-				 Facebook
+				<p className='flex items-center gap-4'>
+					<Image src="/facebook-icon.png" alt="facebook-icon" width={30} height={30}/>
+				<span className=''>facebook</span>
+				</p>
+				
 			  </a>
 			</div>
 			</div>

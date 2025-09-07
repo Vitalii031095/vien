@@ -13,6 +13,7 @@ import Image from "next/image";
 
 const Gallery: React.FC = () => {
   const images = [
+    { src: "/images/im0.jpg", thumb: "/images/im0.jpg" },
     { src: "/images/im1.jpg", thumb: "/images/im1.jpg" },
     { src: "/images/im2.jpg", thumb: "/images/im2.jpg" },
     { src: "/images/im3.jpg", thumb: "/images/im3.jpg" },
@@ -28,7 +29,12 @@ const Gallery: React.FC = () => {
     { src: "/images/im14.jpg", thumb: "/images/im14.jpg" },
     { src: "/images/im15.jpg", thumb: "/images/im15.jpg" },
     { src: "/images/im16.jpg", thumb: "/images/im16.jpg" },
-    { src: "/images/im17.jpg", thumb: "/images/im17.jpg" }
+    { src: "/images/im17.jpg", thumb: "/images/im17.jpg" },
+    { src: "/images/im18.jpg", thumb: "/images/im18.jpg" },
+    { src: "/images/im19.jpg", thumb: "/images/im19.jpg" },
+    { src: "/images/im20.jpg", thumb: "/images/im20.jpg" },
+    { src: "/images/im21.jpg", thumb: "/images/im21.jpg" },
+    { src: "/images/im22.jpg", thumb: "/images/im22.jpg" },
   ];
 
   return (

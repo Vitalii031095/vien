@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 
 const Contact = () => {
@@ -7,7 +8,7 @@ const Contact = () => {
       <div className="conatcts__container">
         <h2 className="meta__title contacts__title">Наші Контакти:</h2>
 
-        <div className="contacts__map flex flex-col-reverse md:flex-row">
+        <div className="contacts__map flex flex-col-reverse md:flex-row ">
           <div className="contacts__iframe">
             <iframe
 				title="Мапа розташування школи"
@@ -19,18 +20,42 @@ const Contact = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div className="contacts__map-text text-map">
+          <div className="contacts__map-text text-map md:pt-10">
             <div className="text-map">
              
-				  <p>Заняття проводяться кожну другу неділю з 10 до 12.45 </p>
-				  <p>За адресою:</p>
+				  <p>Заняття проводяться кожну другу неділю <br/>
+				   з 10:00 до 12.45 </p>
+				  <p className="mt-3">За адресою:</p>
 				  <div className="text-map__adress">
 				  {/* <FaLocationDot style={{ color: "red" }} /> */}
 				  Østerbyskolen,Nygade 17,6600 <span>Vejen</span>
 				  </div>
-              <p>
-				
-              </p>
+             <div>
+							  <h3 className="font-semibold mt-4 mb-2">Ми в мережі</h3>
+							  <a
+								 href="mailto:school@ukrainian.dk"
+								 className=" hover:text-yellow-300 block"
+								 target="_blank"
+								 rel="noopener noreferrer"
+							  >
+								<p className='flex items-center gap-4'>
+							<Image src="/email-icon.png" alt="email-icon" width={30} height={30}/>
+								 <span className='no-underline'> Електронна пошта</span>
+								 </p>
+							  </a>
+							  <a
+								 href="https://www.facebook.com/share/1MkLC7RVFU/"
+								 className="mt-2 hover:text-yellow-300 block"
+								 target="_blank"
+								 rel="noopener noreferrer"
+							  >
+								<p className='flex items-center gap-4'>
+									<Image src="/facebook-icon.png" alt="facebook-icon" width={30} height={30}/>
+								<span className=''>facebook</span>
+								</p>
+								
+							  </a>
+							</div>
             </div>
           </div>
         </div>
