@@ -5,7 +5,7 @@ import MetaSection from "../components/Metasection/MetaSection"
 export default function Home() {
   return (
     <>
-      <section className="hero sec-top  md:min-h-[80vh] ">
+      <section className="hero sec-top  md:min-h-[80vh] mb-4">
         <div
           className="hero__container  flex flex-col py-7  min-h-[70vh]"
         >
