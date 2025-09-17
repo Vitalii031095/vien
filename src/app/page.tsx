@@ -117,6 +117,10 @@ export default function Home() {
                   {" "}
                  4 роки
                 </li>
+					 <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md">
+                  {" "}
+                  5-6 років
+                </li>
                 <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md">
                   {" "}
                   7-8 років
