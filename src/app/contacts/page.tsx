@@ -33,7 +33,7 @@ const Contact = () => {
              <div>
 							  <h3 className="font-semibold mt-4 mb-2">Ми в мережі</h3>
 							  <a
-								 href="mailto:school@ukrainian.dk"
+								 href="mailto:vejen@lastivka.dk"
 								 className=" hover:text-yellow-300 block"
 								 target="_blank"
 								 rel="noopener noreferrer"

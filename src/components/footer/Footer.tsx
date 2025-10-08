@@ -9,20 +9,18 @@ const Footer = () => {
 			<div className={stl.footer__menu}>
 		<div>
 			  <h3 className="font-semibold mb-2">Контакти</h3>
-			  <p>school@ukrainian.dk</p>
-			  <p>м. Копенгаген, вул. Свободи, 12</p>
+			  <p> Østerbyskolen,Nygade 17,6600 <span>Vejen</span></p>
 			</div>
 
 			<div>
 			  <h3 className="font-semibold mb-2">Графік</h3>
 			  <p> 10:00–12:45</p>
-			  <p>Дитяча та молодша група</p>
 			</div>
 
-			<div>
+			<div >
 			  <h3 className="font-semibold mb-2">Ми в мережі</h3>
 			  <a
-				 href="mailto:school@ukrainian.dk"
+				 href="mailto:vejen@lastivka.dk"
 				 className=" hover:text-yellow-300 block"
 				 target="_blank"
 				 rel="noopener noreferrer"
