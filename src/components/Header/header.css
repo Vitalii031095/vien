@@ -20,12 +20,12 @@
 .header__logo{
 	 position: relative; /* обов’язково для fill */
   width: 120px;       /* бажана ширина */
-  height: 80px;    
+  height: 95px;    
 }
 @media(min-width:1024px){
 	.header__logo{
 		width: 160px;       /* бажана ширина */
-  height: 90px;  
+  height: 105px;  
 	}
 }
 .header__logo img{
@@ -140,5 +140,9 @@
 	width: 80px;
 	height: 80px;
 }
+.header__logo{
+		width: 110px;       /* бажана ширина */
+  height: 90px;  
+	}
 }
  
