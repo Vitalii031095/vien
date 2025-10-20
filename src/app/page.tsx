@@ -80,7 +80,7 @@ export default function Home() {
               <Image
                 className="rounded-2xl w-full h-full object-cover"
                 src="/features/4.2.jpg"
-                alt="lastivka"
+                alt="lastivka-images"
 					 height={300}
                 width={200}
                 
