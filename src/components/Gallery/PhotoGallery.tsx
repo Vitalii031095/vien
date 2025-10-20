@@ -49,6 +49,7 @@ const Gallery: React.FC = () => {
         {images.map((img, i) => (
           <a href={img.src} key={i}  
 			//  data-sub-html="<h4>Гори Карпати</h4><p>Світанок над полониною</p>"
+			// data
 			 >
 				<Image src={img.src} alt='' width='400' height='400' className="img--g"/>
 				{/* <p>text</p> */}
