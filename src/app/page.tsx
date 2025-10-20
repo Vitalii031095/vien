@@ -41,7 +41,7 @@ export default function Home() {
             <li className="features__item flex flex-col justify-between items-center gap-5">
               <Image
                 className="rounded-2xl w-full h-full object-cover"
-                src="/features/1.2.jpg"
+               src="/features/2.2.jpg"
                 alt="lastivka"
                 width={300}
                 height={200}
@@ -54,7 +54,8 @@ export default function Home() {
             <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
                 className="rounded-2xl w-full h-full object-contain"
-                src="/features/2.2.jpg"
+					 src="/features/1.2.jpg"
+               
                 alt="lastivka"
               width={300}
                 height={200}
