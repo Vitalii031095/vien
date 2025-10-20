@@ -41,7 +41,7 @@ export default function Home() {
             <li className="features__item flex flex-col justify-between items-center gap-5">
               <Image
                 className="rounded-2xl w-full h-full object-cover"
-                src="/features/1.1.jpg"
+                src="/features/1.2.jpg"
                 alt="lastivka"
                 width={300}
                 height={200}
@@ -54,7 +54,7 @@ export default function Home() {
             <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
                 className="rounded-2xl w-full h-full object-contain"
-                src="/features/2.1.png"
+                src="/features/2.2.jpg"
                 alt="lastivka"
               width={300}
                 height={200}
@@ -66,7 +66,7 @@ export default function Home() {
             <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
                 className="rounded-2xl w-full h-full object-cover"
-                src="/features/3.jpg"
+                src="/features/3.2.jpg"
                 alt="lastivka"
                 width={300}
                 height={200}
@@ -78,7 +78,7 @@ export default function Home() {
             <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
                 className="rounded-2xl w-full h-full object-cover"
-                src="/features/4.jpg"
+                src="/features/4.2.jpg"
                 alt="lastivka"
 					 height={300}
                 width={200}
