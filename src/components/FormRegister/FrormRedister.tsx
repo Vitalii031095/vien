@@ -15,7 +15,7 @@ export default function FrormRedister() {
 	
 	const today = new Date();
 	const month =today.getMonth()
-	 if(month === 7 || 6||11||0){
+	 if(month === 7 || 6 || 11 || 0){
 		const dayNumber = today.getDate()
 		const conditionsJuly = (month=== 6 && dayNumber >=15);
 		const conditionsAugust = (month=== 7 && dayNumber <=15);
@@ -33,7 +33,7 @@ const birthday = new Date(dateString);
 
 const age = today.getFullYear() - birthday.getFullYear();
 
-if (age < 4 && age >8) {
+if (age < 4 || age > 8) {
   alert("Дитина має бути старше 3 років");
   return;
 }

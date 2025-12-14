@@ -20,7 +20,7 @@ export async function POST(req: Request) {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER,
+    to: process.env.EMAIL_RECEIVER,
     subject: 'Нова заявка На вступ до школи',
     text: `
       Ім'я дитини: ${data.name}
