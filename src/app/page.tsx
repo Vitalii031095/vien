@@ -6,30 +6,26 @@ export default function Home() {
   return (
     <>
       <section className="hero sec-top  md:min-h-[80vh] mb-4">
-        <div
-          className="hero__container  flex flex-col py-7  min-h-[70vh]"
-        >
-          <div
-            className="hero__welcome welcome-hero flex flex-col justify-between h-[100%] gap-40 md:gap-70">
-
-           <div className="welcome-hero__info bg-amber-50 opacity-75 p-4">
-					<h1 className="text-2xl md:text-3xl mb-4 text-amber-950 text-center">
-						 Вітаємо в українській школі
-							<span className="text-3xl md:text-4xl font-bold text-amber-650 ml-2">Cвітанок</span>
-						</h1>
-             </div>
-			<div className="mt-8 lg:mt-auto mb-8  bg-amber-50 opacity-60 p-4">
-            <h2 className=" text-xl md:text-5xl font-bold text-center text-[#1E1E1E] ">
-              Ластівка — єднає українців у Данії
-            </h2>
-            <p className="m-4  md:text-xl text-center text-[#333030]">
-              Освітній простір для дітей та батьків, де зберігаються культура,
-              мова і тепло рідної землі.
-            </p>
+        <div className="hero__container  flex flex-col py-7  min-h-[70vh]">
+          <div className="hero__welcome welcome-hero flex flex-col justify-between h-[100%] gap-40 md:gap-70">
+            <div className="welcome-hero__info bg-amber-50 opacity-75 p-4">
+              <h1 className="text-2xl md:text-3xl mb-4 text-amber-950 text-center">
+                Вітаємо в українській школі
+                <span className="text-3xl md:text-4xl font-bold text-amber-650 ml-2">
+                  Cвітанок
+                </span>
+              </h1>
+            </div>
+            <div className="mt-8 lg:mt-auto mb-8  bg-amber-50 opacity-60 p-4">
+              <h2 className=" text-xl md:text-5xl font-bold text-center text-[#1E1E1E] ">
+                Ластівка — єднає українців у Данії
+              </h2>
+              <p className="m-4  md:text-xl text-center text-[#333030]">
+                Освітній простір для дітей та батьків, де зберігаються культура,
+                мова і тепло рідної землі.
+              </p>
+            </div>
           </div>
-          </div>
-
-        
         </div>
       </section>
       <section className="features pb-5">
@@ -41,12 +37,12 @@ export default function Home() {
             <li className="features__item flex flex-col justify-between items-center gap-5">
               <Image
                 className="rounded-2xl w-full h-full object-cover"
-               src="/features/2.2.jpg"
+                src="/features/2.2.jpg"
                 alt="lastivka"
                 width={300}
                 height={200}
               />
-				 
+
               <p className="md:text-xl m-w-[220px] text-center">
                 Живе спілкування українською мовою
               </p>
@@ -54,10 +50,9 @@ export default function Home() {
             <li className="features__item flex flex-col items-center justify-between gap-5">
               <Image
                 className="rounded-2xl w-full h-full object-contain"
-					 src="/features/1.2.jpg"
-               
+                src="/features/1.2.jpg"
                 alt="lastivka"
-              width={300}
+                width={300}
                 height={200}
               />
               <p className="md:text-xl m-w-[220px] text-center">
@@ -81,9 +76,8 @@ export default function Home() {
                 className="rounded-2xl w-full h-full object-cover"
                 src="/features/4.2.jpg"
                 alt="lastivka-images"
-					 height={300}
+                height={300}
                 width={200}
-                
               />
               <p className="md:text-xl m-w-[220px] text-center">
                 {" "}
@@ -116,9 +110,9 @@ export default function Home() {
               <ul className="flex flex-col space-y-2.5">
                 <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md">
                   {" "}
-                 4 роки
+                  4 роки
                 </li>
-					 <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md">
+                <li className="text-xl md:text-2xl  p-2 bg-white rounded-lg shadow-md">
                   {" "}
                   5-6 років
                 </li>

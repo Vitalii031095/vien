@@ -1,35 +1,43 @@
-'use client';
+"use client"
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useState, useEffect } from "react"
+import Link from "next/link"
 
 export default function RegistrationSection() {
-  const [isAvailable, setIsAvailable] = useState(false);
+  const [isAvailable, setIsAvailable] = useState(false)
 
   useEffect(() => {
-    const today = new Date();
+    const today = new Date()
 
     // Доступні періоди (рік можна замінити на будь-який, або перевіряти лише місяць+день)
     const periods = [
-      { start: new Date(today.getFullYear(), 6, 15), end: new Date(today.getFullYear(), 7, 5) }, // 15.07 – 05.08
-      { start: new Date(today.getFullYear(), 11, 5), end: new Date(today.getFullYear() + 1, 0, 5) }, // 05.12 – 05.01
-    ];
+      {
+        start: new Date(today.getFullYear(), 0, 1),
+        end: new Date(today.getFullYear(), 0, 5),
+      },
+      {
+        start: new Date(today.getFullYear(), 6, 15),
+        end: new Date(today.getFullYear(), 7, 5),
+      }, // 15.07 – 05.08
+      {
+        start: new Date(today.getFullYear(), 11, 5),
+        end: new Date(today.getFullYear(), 11, 31),
+      }, // 05.12 – 05.01
+    ]
 
     // Перевірка чи сьогодні входить у якийсь із періодів
-    const available = periods.some(
-      (p) => today >= p.start && today <= p.end
-    );
+    const available = periods.some((p) => today >= p.start && today <= p.end)
 
-    setIsAvailable(available);
-  }, []);
+    setIsAvailable(available)
+  }, [])
 
   return (
     <section className="py-12 text-center bg-gray-100">
       <h2 className="text-2xl font-bold mb-4">Реєстрація</h2>
       <p className="mb-6 text-gray-700">
-        Подати заявку можна з <strong>15.07 по 05.08</strong> та з <strong>05.12 по 05.01</strong>.
-		  <br/>
-		  В цей час кнопка буде активна натисніть на неї та заповніть фому
+        Подати заявку можна з <strong>15.07 по 05.08</strong> та з{" "}
+        <strong>05.12 по 05.01</strong>.
+        <br />В цей час кнопка буде активна натисніть на неї та заповніть фому
       </p>
 
       {isAvailable ? (
@@ -48,5 +56,5 @@ export default function RegistrationSection() {
         </button>
       )}
     </section>
-  );
+  )
 }
