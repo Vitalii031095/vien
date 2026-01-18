@@ -9,15 +9,15 @@ export default function Home() {
         <div className="hero__container  flex flex-col py-7  min-h-[70vh]">
           <div className="hero__welcome welcome-hero flex flex-col justify-between h-[100%] gap-40 md:gap-70">
             <div className="welcome-hero__info bg-amber-50 opacity-75 p-4">
-              <h1 className="text-2xl md:text-3xl mb-4 text-amber-950 text-center">
+              <h1 className="text-2xl md:text-4xl  mb-4 text-amber-950 text-center">
                 Вітаємо в українській школі
-                <span className="text-3xl md:text-4xl font-bold text-amber-650 ml-2">
+                <span className="text-3xl md:text-5xl font-bold text-amber-650 ml-2">
                   Cвітанок
                 </span>
               </h1>
             </div>
             <div className="mt-8 lg:mt-auto mb-8  bg-amber-50 opacity-60 p-4">
-              <h2 className=" text-xl md:text-5xl font-bold text-center text-[#1E1E1E] ">
+              <h2 className="text-2xl md:text-3xl font-bold text-center text-[#1E1E1E] ">
                 Ластівка — єднає українців у Данії
               </h2>
               <p className="m-4  md:text-xl text-center text-[#333030]">
