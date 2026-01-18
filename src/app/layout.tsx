@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="uk">
+    <html lang="uk" className="overflow-x-hidden">
       <body
         cz-shortcut-listen="true"
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen overflow-x-hidden`}
