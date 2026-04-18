@@ -8,7 +8,7 @@ export default function Home() {
       <section className="hero sec-top  md:min-h-[80vh] mb-4">
         <div className="hero__container  flex flex-col py-7  min-h-[70vh]">
           <div className="hero__welcome welcome-hero flex flex-col justify-between h-[100%] gap-40 md:gap-70">
-            <div className="welcome-hero__info bg-amber-50 opacity-75 p-4">
+            <div className="welcome-hero__info bg-amber-50 opacity-60 p-4">
               <h1 className="text-2xl md:text-4xl  mb-4 text-amber-950 text-center">
                 Вітаємо в українській школі
                 <span className="text-3xl md:text-5xl font-bold text-amber-650 ml-2">

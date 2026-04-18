@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import Image from "next/image"
 import "./header.css"
-import { useState } from "react"
+import { useEffect,useState } from "react"
 
 const navLinks = [
   { name: "Головна", path: "/" },
@@ -15,8 +15,24 @@ const navLinks = [
 ]
 
 const Header = () => {
+	
 	const [burgerBtn, setBurgetBtn] = useState<boolean>(false)
   const pathname = usePathname()
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const toggleBurger = ()=>{
 	setBurgetBtn(!burgerBtn)
@@ -24,7 +40,7 @@ const Header = () => {
   console.log(pathname)
 
   return (
-    <div className="header ">
+    <div className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="header__container">
         <Link href="/" className="relative block header__logo logo">
           <Image
