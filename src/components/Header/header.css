@@ -5,7 +5,8 @@
 	z-index: 20;
 	color: #3a3a3a;
 
-	background-color: #fefefe;
+	background-color: #fefefeb7;
+	
 	/* backdrop-filter:blur(10px); */
 }
 .header__container{
