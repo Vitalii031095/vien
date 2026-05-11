@@ -64,7 +64,7 @@ const events: Event[] = [
   { date: "2026-05-31", title: "табір", event: "ste" },
   {
     date: "2026-06-13",
-    title: "поїздка у Madsbyparken, Fredericia",
+    title: "Поїздка у Jump A Lot,Rødekro",
     event: "ste",
   },
 ]
