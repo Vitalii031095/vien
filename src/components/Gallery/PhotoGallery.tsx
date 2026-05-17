@@ -13,6 +13,21 @@ import Image from "next/image";
 
 const Gallery: React.FC = () => {
   const images = [
+{ src: "/images/mai-1.avif", thumb: "/images/mai-1.avif" },
+{ src: "/images/mai-2.avif", thumb: "/images/mai-2.avif" },
+{ src: "/images/mai-3.avif", thumb: "/images/mai-3.avif" },
+{ src: "/images/mai-4.avif", thumb: "/images/mai-4.avif" },
+{ src: "/images/mai-5.avif", thumb: "/images/mai-5.avif" },
+{ src: "/images/mai-6.avif", thumb: "/images/mai-6.avif" },
+{ src: "/images/mai-7.avif", thumb: "/images/mai-7.avif" },
+{ src: "/images/mai-8.avif", thumb: "/images/mai-8.avif" },
+{ src: "/images/mai-9.avif", thumb: "/images/mai-9.avif" },
+{ src: "/images/mai-10.avif", thumb: "/images/mai-10.avif" },
+{ src: "/images/mai-11.avif", thumb: "/images/mai-11.avif" },
+{ src: "/images/mai-12.avif", thumb: "/images/mai-12.avif" },
+{ src: "/images/mai-13.avif", thumb: "/images/mai-13.avif" },
+{ src: "/images/mai-14.avif", thumb: "/images/mai-14.avif" },
+
 	 { src: "/images/im26.jpg", thumb: "/images/im26.jpg" },
 	  { src: "/images/im27.jpg", thumb: "/images/im27.jpg" },
 	  { src: "/images/im28.jpg", thumb: "/images/im28.jpg" },
