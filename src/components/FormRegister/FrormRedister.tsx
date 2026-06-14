@@ -17,8 +17,8 @@ export default function FrormRedister() {
     const month = today.getMonth()
     if (month === 6 || 7 || 11 || 0) {
       const dayNumber = today.getDate()
-      const conditionsJuly = month === 6 && dayNumber >= 15
-      const conditionsAugust = month === 7 && dayNumber <= 15
+      const conditionsJuly = month === 5 && dayNumber >= 14
+      const conditionsAugust = month === 6 && dayNumber <= 31
       const conditionsDecember = month === 11 && dayNumber >= 5
       const conditionsJanuar = month === 0 && dayNumber <= 5
       if (

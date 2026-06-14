@@ -35,7 +35,7 @@ export default function RegistrationSection() {
     <section className="py-12 text-center bg-gray-100">
       <h2 className="text-2xl font-bold mb-4">Реєстрація</h2>
       <p className="mb-6 text-gray-700">
-        Подати заявку можна з <strong>15.07 по 05.08</strong> та з{" "}
+        Подати заявку можна з <strong>15.06 по 31.07</strong> та з{" "}
         <strong>05.12 по 05.01</strong>.
         <br />В цей час кнопка буде активна натисніть на неї та заповніть фому
       </p>
