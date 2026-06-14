@@ -18,7 +18,7 @@ export default function FrormRedister() {
     if (month === 6 || 7 || 11 || 0) {
       const dayNumber = today.getDate()
       const conditionsJuly = month === 5 && dayNumber >= 14
-      const conditionsAugust = month === 6 && dayNumber <= 31
+      const conditionsAugust = month === 6 
       const conditionsDecember = month === 11 && dayNumber >= 5
       const conditionsJanuar = month === 0 && dayNumber <= 5
       if (
@@ -46,13 +46,18 @@ export default function FrormRedister() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
         })
+console.log("STATUS:", res.status)
+
+  const responseText = await res.text()
+  console.log("RESPONSE:", responseText)
 
         if (res.ok) {
           alert("Дані надіслано!")
           form.reset() //якщо буде ерор заміни на form.reset()-e.target.reset()
           router.push("/about")
         } else {
-          alert("Помилка при відправленні")
+         //  alert("Помилка при відправленні")
+			alert(`Помилка ${res.status}`)
         }
       } else {
         alert("Прийняття форми та відправка ще не доступні")
