@@ -36,13 +36,13 @@ export async function POST(req: Request) {
   try {
     await transporter.sendMail(mailOptions)
     return NextResponse.json({ success: true })
-  } catch (err: any) {
+  } catch (err) {
   console.error("MAIL ERROR:", err)
 
   return NextResponse.json(
     {
       success: false,
-      message: err?.message,
+      error: String(err),
     },
     { status: 500 }
   )
