@@ -16,8 +16,8 @@ export default function RegistrationSection() {
         end: new Date(today.getFullYear(), 0, 5),
       },
       {
-        start: new Date(today.getFullYear(), 6, 15),
-        end: new Date(today.getFullYear(), 7, 5),
+        start: new Date(today.getFullYear(), 5, 14),
+        end: new Date(today.getFullYear(), 6, 31),
       }, // 15.07 – 05.08
       {
         start: new Date(today.getFullYear(), 11, 5),
