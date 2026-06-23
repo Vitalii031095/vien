@@ -9,7 +9,9 @@ export default function FrormRedister() {
 
   const onFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+	const button = e.currentTarget.querySelector('button[type="submit"]') as HTMLButtonElement
 
+button.disabled = true
     const form = e.target as HTMLFormElement // ✅ currentTarget завжди вказує на форму
     const formData = new FormData(form)
 
@@ -58,6 +60,7 @@ console.log("STATUS:", res.status)
         } else {
          //  alert("Помилка при відправленні")
 			alert(`Помилка ${res.status}`)
+			button.disabled = false
         }
       } else {
         alert("Прийняття форми та відправка ще не доступні")
