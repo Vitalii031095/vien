@@ -38,7 +38,7 @@ button.disabled = true
 
         const age = today.getFullYear() - birthday.getFullYear()
 
-        if (age < 4 || age >= 15) {
+        if (age < 3 || age >= 15) {
           alert("Дитина має бути старше 3 років")
           return
         }
