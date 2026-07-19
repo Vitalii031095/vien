@@ -4,7 +4,9 @@ import RegistrationSection from "@/components/RegistrationSection"
 
 export default function ActualPage() {
   return (
-    <div className="pt-[100px] md:pt-[150px]">
+	
+    <div className="pt-[90px] md:pt-[180px]">
+		<RegistrationSection/>
       <section className="calendar">
         <div className="calendar__container flex  flex-col items-center   md:flex-row  justify-around gap-12">
           <div className="clalendar__info">
@@ -43,7 +45,7 @@ export default function ActualPage() {
         </ul>
       </div>
       <Gallery />
-		<RegistrationSection/>
+		{/* <RegistrationSection/> */}
     </div>
   )
 }

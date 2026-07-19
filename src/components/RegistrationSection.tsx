@@ -32,8 +32,8 @@ export default function RegistrationSection() {
   }, [])
 
   return (
-    <section className="py-12 text-center bg-gray-100">
-      <h2 className="text-2xl font-bold mb-4">Реєстрація</h2>
+    <section className="pb-11 md:pb-15 text-center  mt-5 md:mt-0">
+      <h2 className="text-2xl font-bold mb-4 ">Реєстрація</h2>
       <p className="mb-6 text-gray-700">
         Подати заявку можна з <strong>15.06 по 31.07</strong> та з{" "}
         <strong>05.12 по 05.01</strong>.
