@@ -5,7 +5,7 @@ import RegistrationSection from "@/components/RegistrationSection"
 export default function ActualPage() {
   return (
 	
-    <div className="pt-[90px] md:pt-[180px]">
+    <div className="pt-[90px] md:pt-[140px]">
 		<RegistrationSection/>
       <section className="calendar">
         <div className="calendar__container flex  flex-col items-center   md:flex-row  justify-around gap-12">
